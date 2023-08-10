@@ -1,0 +1,1 @@
+I will be demonstrating the proof of concept of our voltage glitching circuit, it is essentially just a high powered MOSFET switching the device between VCC and ground. However it is possible to make this stronger by soldering multiple MOSFETs together, and more precise by choosing a specific trigger signal.
