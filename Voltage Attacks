@@ -1,3 +1,20 @@
 I will be demonstrating the proof of concept of our voltage glitching circuit, it is essentially just a high powered MOSFET switching the device
 between VCC and ground. However it is possible to make this stronger by soldering multiple MOSFETs together, and more precise by choosing a 
 specific trigger signal.
+
+  My first test was a simple counter incrementing i:
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+}
+  int i = 0;
+void loop() {
+  i++;
+  delay(500);
+  Serial.println(i);
+}
+Printing results simply showed: 1 2 3 4 5 6 7 ...
+I used a 100Hz singal at 7Vpp and connected the drain of my mosfet to a pin()()()())()() on the Arduino Mega.
+The first result I was able to replicate is restarting the device as seen below
+
